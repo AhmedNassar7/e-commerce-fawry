@@ -1,8 +1,13 @@
-# 🛒 E-Commerce System with Digital Wallet
+# E-Commerce System
 
-A modern e-commerce system with integrated digital wallet functionality built with React, TypeScript, and Tailwind CSS.
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-## ✨ Features
+A modern, full-featured e-commerce system with integrated digital wallet functionality, built with React, TypeScript, and Tailwind CSS. This application demonstrates advanced product management, shopping cart operations, and checkout processes.
+
+## Features
 
 - **Product Management** - Support for different product types (perishable/non-perishable, shippable/non-shippable)
 - **Shopping Cart** - Add, remove, and manage products with real-time validation
@@ -11,42 +16,68 @@ A modern e-commerce system with integrated digital wallet functionality built wi
 - **Responsive Design** - Works on desktop and mobile devices
 - **Dark/Light Theme** - Toggle between themes
 
-## 🚀 Quick Start
+### Prerequisites
 
-1. **Install dependencies**
+- **Node.js** (v18.0.0 or higher)
+- **npm** (v8.0.0 or higher) or **yarn** (v1.22.0 or higher)
+- **Git** for version control
+
+### Step-by-Step Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/e-commerce-fawry.git
+   cd e-commerce-fawry
+   ```
+
+2. **Install dependencies**
+
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. **Start development server**
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+   Configure your `.env.local` file:
+
+   ```env
+   VITE_API_BASE_URL=http://localhost:3001
+   ```
+
+4. **Start the development server**
+
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
 
-3. **Open browser**
-   ```
-   http://localhost:5173
-   ```
+5. **Open your browser**
+   Navigate to `http://localhost:5173`
 
 ## 📖 How to Use
 
 ### Adding Products to Cart
+
 - Browse products on the main page
 - Select quantity and click "Add to Cart"
 - View cart by clicking the cart icon in the header
 
 ### Checkout Process
+
 - Open cart sidebar
 - Review items and total
 - Click "Checkout" to process payment
 - View receipt and shipment details
 
-### Wallet Management
-- Check balance in the top section
-- Add funds using the "Add Funds" button
-- View transaction history below
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React 18** - UI framework
 - **TypeScript** - Type safety
@@ -54,9 +85,9 @@ A modern e-commerce system with integrated digital wallet functionality built wi
 - **Vite** - Build tool
 - **Lucide React** - Icons
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```plaintext
 src/
 ├── components/          # React components
 ├── services/           # Business logic
@@ -66,7 +97,7 @@ src/
 └── App.tsx             # Main app component
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run tests
@@ -76,25 +107,27 @@ npm run test
 npm run build
 ```
 
-## 📱 Screenshots
+## Screenshots
 
 ### Shopping Cart
-![Shopping Cart](./public/img/3.png)
+
+![Shopping Cart](./public/img/cart.png)
 
 ### Checkout Receipt
-![Checkout Receipt](./public/img/3-1.png)
 
-## 🤝 Contributing
+![Checkout Receipt](./public/img/checkout.png)
+
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+## Contact
 
 For questions or support, please open an issue on GitHub.
